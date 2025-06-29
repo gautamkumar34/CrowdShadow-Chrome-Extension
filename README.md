@@ -94,12 +94,12 @@ Build the React frontend which generates the `dist` folder containing the `sideb
 🤝 Contributing
 Contributions are welcome! If you have suggestions for improvements, new features, or bug fixes, please feel free to:
 
-Fork the repository.
-Create a new branch (git checkout -b feature/your-feature-name).
-Make your changes.
-Commit your changes (git commit -m 'Add new feature').
-Push to the branch (git push origin feature/your-feature-name).
-Open a Pull Request.
+-Fork the repository.
+-Create a new branch (git checkout -b feature/your-feature-name).
+-Make your changes.
+-Commit your changes (git commit -m 'Add new feature').
+-Push to the branch (git push origin feature/your-feature-name).
+-Open a Pull Request.
 
 ----------------------
 
