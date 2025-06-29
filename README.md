@@ -91,7 +91,8 @@ Build the React frontend which generates the `dist` folder containing the `sideb
 - **Contextual Analysis:** Utilize LLMs to analyze page content and suggest more nuanced search queries.
 - **Authentication & Data Persistence:** Implement Firebase Firestore for user-specific settings or notes.
 
-🤝 Contributing
+##🤝 Contributing
+
 Contributions are welcome! If you have suggestions for improvements, new features, or bug fixes, please feel free to:
 
 - Fork the repository.
