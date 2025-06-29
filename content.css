@@ -1,0 +1,36 @@
+/* CrowdShadow/content.css */
+
+#crowdshadow-floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999998; 
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    opacity: 0; 
+    pointer-events: none; 
+}
+
+#crowdshadow-floating-icon.visible {
+    opacity: 1; 
+    pointer-events: auto; 
+}
+
+#crowdshadow-floating-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.05);
+}
+

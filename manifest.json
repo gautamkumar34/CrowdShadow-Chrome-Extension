@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "name": "CrowdShadow",
+    "version": "1.0",
+    "description": "See what the internet thinks about the current page in real-time.",
+    "icons": {
+      "16": "icons/cool (1).png",
+      "48": "icons/cool (2).png",
+      "128": "icons/cool (3).png"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/cool (1).png",
+        "48": "icons/cool (2).png"
+      }
+    },
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "tabs"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["content.css"]
+      }
+    ],
+    "web_accessible_resources": [
+        {
+          "resources": ["dist/sidebar.html", "dist/sidebar.js", "dist/sidebar.css"],
+          "matches": ["<all_urls>"],
+          "use_dynamic_url": true
+        }
+      ],
+    "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self';"
+    }
+  }
